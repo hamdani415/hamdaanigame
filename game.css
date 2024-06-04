@@ -8,7 +8,7 @@ body{
 
 .utama{
     flex-wrap: wrap;
-     text-align: center;
+    text-align: center;
     justify-content: center;
     display: flex;
     min-height: 100vh;
