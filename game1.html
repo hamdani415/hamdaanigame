@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game1</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+    <div class="utama">
+        <div class="wraper">
+            <h1 class="pertanyaan" id="tanya"></h1>
+
+            <div>
+
+                <input class="jawaban" type="text" placeholder="jawaban" id="jawab">
+                <button class="tombol" onclick="star()">kirim</button>
+
+
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+
+    const tanya = document.getElementById('tanya')
+    const jawab = document.getElementById('jawab')
+
+    tanya.innerHTML = 'jika x + 3y = 15 dan 3x + 6y = 30 maka berapakah nilai dari y';
+
+    function star() {
+        if (jawab.value == 5) {
+            alert('benarrr')
+            window.location = ('game2.html')
+            jawab.value = ''
+        }
+        else {
+            alert('jawaban salah')
+            jawab.value = ''
+        }
+
+    }
+</script>
+
+</html>
